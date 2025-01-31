@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #121212, #1e1e1e); /* Verlauf von Dunkelgrau zu noch dunklerem Grau */
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    background-color: #168aad;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+header:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+header img {
+    max-width: 100px;
+    height: auto;
+    margin: 0 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #333333;
+}
+
+section h1,
+section h2,
+section h3,
+section h4,
+section h5,
+section h6 {
+    text-align: center;
+}
+
+#portfolio {
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    text-align: justify;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+#portfolio:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #333333;
+}
+
+section img,
+section iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+textarea {
+    min-width: 400px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+textarea:focus {
+    background-color: #333;
+}
+
+/* Stil für die Tabelle */
+table {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto; /* Zentriert die Tabelle */
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Tabellenkopf */
+th {
+    background-color: #168aad;
+    color: white;
+    font-weight: bold;
+    padding: 14px;
+    text-align: left;
+}
+
+/* Tabellenzellen */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #444;
+}
+
+/* Wechselnde Zeilenfarben */
+tr:nth-child(even) {
+    background-color: #3a3a3a;
+}
+
+/* Hover-Effekt für Zeilen */
+tr:hover {
+    background-color: #555;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Zusätzlicher Stil für eine bessere Lesbarkeit auf kleineren Bildschirmen */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+
+/* Stil für den Senden-Button */
+button {
+    background-color: #168aad; /* Modernes Blau */
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    display: block;
+    margin: 10px auto; /* Zentriert den Button */
+}
+
+/* Hover-Effekt */
+button:hover {
+    background-color: #0f6c8e;
+    transform: scale(1.05);
+}
+
+/* Fokus-Stil */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(22, 138, 173, 0.7);
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#about {
+    background-color: #d9ed92;
+    color: #1e1e1e;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#about, #known-attacks {
+    flex: 1;
+    min-width: 48%;
+    box-sizing: border-box;
+}
+
+#about {
+    margin-right: 20px;
+}
+
+#about:last-child, #known-attacks:last-child {
+    margin-right: 0;
+}
+
+#contact {
+    background-color: #1e1e1e; /* Dunkler Hintergrund passend zum Gesamtstil */
+    color: #e0e0e0;
+    padding: 30px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 600px; /* Begrenzte Breite für zentrierten Look */
+    text-align: center;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    margin-bottom: 120px; /* Abstand nach der Section */
+}

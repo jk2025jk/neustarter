@@ -1,0 +1,162 @@
+<!DOCTYPE html> 
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do not open this website!</title>
+</head>
+<body>
+    <header>
+        <h1>Wir Schützen Sie vor Angriffen</h1>
+        <img src="https://miro.medium.com/v2/resize:fit:140/format:webp/1*_1lIWxj1yw8xg5Jvg4hGPg.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="#about">Weshalb ist diese Webseite gefährlich?</a></li>
+                <li><a href="#portfolio">Benutzte Schadsoftware</a></li>
+                <li><a href="#contact">Kontaktieren Sie mich jetzt!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>Weshalb ist JavaScript gefährlich?</h2>
+            <p>JavaScript ist eine mächtige Programmiersprache, die in modernen Webseiten weit verbreitet ist. Allerdings birgt die Verwendung von JavaScript auch einige Risiken, die die Sicherheit und Privatsphäre der Nutzer gefährden können.</p>
+            <p>Ein häufiges Problem sind <strong>Cross-Site Scripting (XSS)-Angriffe</strong>, bei denen Angreifer schadhafter JavaScript-Code in Webseiten einschleusen. Dieser Code wird dann im Browser des Nutzers ausgeführt und kann dazu führen, dass private Informationen wie Passwörter gestohlen oder Nutzersitzungen übernommen werden.</p>
+            <p>Ein weiteres Risiko ist die <strong>Manipulation von DOM (Document Object Model)</strong>. Schadcode kann die Struktur einer Webseite verändern, was zu ungewolltem Verhalten führt. Angreifer können so z.B. Formularfelder manipulieren oder Nutzereingaben auf gefährliche Weise weiterverarbeiten.</p>
+            <p>JavaScript kann zudem für <strong>Tracking</strong> und <strong>Datensammlung</strong> verwendet werden. Viele Webseiten nutzen JavaScript, um Nutzeraktivitäten zu überwachen und detaillierte Profile zu erstellen, was die Privatsphäre gefährden kann.</p>
+            <p>Abschließend lässt sich sagen, dass JavaScript, obwohl es Webseiten interaktiv und funktional macht, auch eine Angriffsfläche für Hacker bietet. Um sich zu schützen, sollten Nutzer sicherstellen, dass ihre Browser aktuell sind und JavaScript nur auf vertrauenswürdigen Seiten ausgeführt wird.</p>
+        </section>
+
+        <section id="known-attacks">
+            <h2>Bekannte JavaScript-Attacken</h2>
+            <h3>Häufige JavaScript-Attacken</h3>
+            <ul>
+                <li><strong>Cross-Site Scripting (XSS):</strong> Angreifer schleusen schadhafter JavaScript-Code in Webseiten ein, um Daten zu stehlen oder das Verhalten der Seite zu manipulieren.</li>
+                <li><strong>Cross-Site Request Forgery (CSRF):</strong> Diese Attacke zwingt den Browser eines Nutzers, eine ungewollte Aktion auf einer Webseite durchzuführen, während der Nutzer authentifiziert ist.</li>
+                <li><strong>Clickjacking:</strong> Eine Methode, bei der ein Angreifer unsichtbare Inhalte über eine vertrauenswürdige Webseite legt, um den Nutzer dazu zu bringen, auf unsichtbare, schadhafte Elemente zu klicken.</li>
+                <li><strong>Drive-by Downloads:</strong> Schadsoftware wird automatisch heruntergeladen und installiert, ohne dass der Nutzer etwas merkt, oft durch JavaScript-Exploits.</li>
+            </ul>
+            <h3>Weniger häufige JavaScript-Attacken</h3>
+            <ol>
+                <li><strong>JavaScript-basierte Keylogger:</strong> Angreifer überwachen und protokollieren Tastatureingaben des Nutzers, um sensible Daten wie Passwörter zu stehlen.</li>
+                <li><strong>Malvertising:</strong> JavaScript wird in Werbeanzeigen versteckt, die Nutzer auf bösartige Seiten umleiten oder Malware herunterladen.</li>
+                <li><strong>Session Hijacking:</strong> Angreifer stehlen die Sitzung eines Nutzers, indem sie JavaScript verwenden, um Session-Cookies zu extrahieren und die Identität des Nutzers zu übernehmen.</li>
+                <li><strong>Formularmanipulation:</strong> JavaScript kann verwendet werden, um Formulardaten zu manipulieren, um schadhafte Eingaben zu übermitteln und so Sicherheitslücken auszunutzen.</li>
+            </ol>
+        </section>
+    </div>
+
+    <section id="portfolio">
+        <h2>Benutzte Schadsoftware</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Projektname</th>
+                    <th>Kategorie</th>
+                    <th>Datum</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cross-Site Scripting (XSS)</td>
+                    <td>Angriff</td>
+                    <td>Januar 2025</td>
+                </tr>
+                <tr>
+                    <td>Malvertising</td>
+                    <td>Schadcode</td>
+                    <td>Februar 2025</td>
+                </tr>
+                <tr>
+                    <td>JavaScript-basierter Keylogger</td>
+                    <td>Schadsoftware</td>
+                    <td>März 2025</td>
+                </tr>
+                <tr>
+                    <td>Drive-by Downloads</td>
+                    <td>Schadhafter Download</td>
+                    <td>April 2025</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div>
+            <h3>Beispiel 1: Cross-Site Scripting (XSS) Angriffe</h3>
+            <p>Cross-Site Scripting (XSS) ist eine der häufigsten Methoden, wie JavaScript in schadhafter Weise genutzt werden kann. Hierbei schleusen Angreifer JavaScript-Code in Webseiten ein, der dann im Browser des Nutzers ausgeführt wird. Das führt zu Sicherheitslücken, die Passwörter stehlen oder Sitzungen kapern können.</p>
+            <img src="https://www.computerweekly.com/rms/German/Cross-Site-Scripting-deutsch.png" alt="XSS Angriff Beispiel" width="600">
+            <h3>Beispiel 2: Schadcode über Malvertising</h3>
+            <p>Malvertising ist eine Methode, bei der bösartiger JavaScript-Code in Werbeanzeigen versteckt wird. Sobald der Nutzer auf die Anzeige klickt oder sie im Browser geladen wird, wird der Schadcode ausgeführt. Dieser kann dann etwa persönliche Daten sammeln oder den Rechner des Nutzers mit Malware infizieren.</p>
+            <img src="https://ic.nordcdn.com/v1/https://sb.nordcdn.com/m/876a98fc488c66d3/original/blog-featured-malvertising-svg.svg" alt="Malvertising Beispiel" width="600">
+            <h3>Beispiel 3: JavaScript als Keylogger</h3>
+            <p>Ein JavaScript-basierter Keylogger kann in eine Webseite eingebettet werden, um Tastatureingaben des Nutzers heimlich zu überwachen. Diese Eingaben könnten sensible Daten wie Passwörter oder Kreditkartennummern beinhalten.</p>
+            <img src="https://us.norton.com/content/dam/blogs/images/norton/am/what-is-a-keylogger-01.png" alt="Keylogger Beispiel" width="600">
+            <h3>Video: JavaScript als Malware</h3>
+            <p>In diesem Video wird gezeigt, wie JavaScript als Schadsoftware verwendet werden kann, um einen Rechner zu kompromittieren und persönliche Daten zu stehlen:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/g8_t1WfObok" frameborder="0" allowfullscreen></iframe>
+            <h3>Beispiel 4: Drive-by Downloads</h3>
+            <p>Ein Drive-by Download nutzt Schwachstellen im Browser oder in Plugins aus, um JavaScript auszuführen und automatisch schadhafte Dateien herunterzuladen, ohne dass der Nutzer etwas bemerkt.</p>
+            <img src="https://us.norton.com/content/dam/blogs/images/norton/am/authorized-drive-by-downloads1.gif" alt="Drive-by Download Beispiel" width="600">
+            <p>Diese Beispiele zeigen, wie gefährlich JavaScript sein kann, wenn es missbraucht wird. Um sich zu schützen, sollten Nutzer darauf achten, nur vertrauenswürdige Webseiten zu besuchen und ihre Software stets auf dem neuesten Stand zu halten.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontaktieren Sie mich um in Zukunft sicherer im Web zu sein</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Nachricht:</label><br>
+            <textarea id="message" name="message" rows="10" required></textarea><br><br>
+            <button type="submit">Senden</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Do not open this website!. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const form = document.querySelector("form");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Verhindert das Standard-Verhalten des Formulars (Seitenneuladen)
+
+            // Erfasse die Formulardaten
+            const formData = new FormData(form);
+            const formDataObject = {};
+            formData.forEach(function(value, key) {
+                formDataObject[key] = value;
+            });
+
+            // Sende die Daten an eine Backend-URL (fiktives Beispiel)
+            const backendURL = "pana.christ@neustarter.de";
+            fetch(backendURL, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formDataObject)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                alert("Die Nachricht wurde erfolgreich gesendet!");
+                form.reset(); // Formular zurücksetzen
+            })
+            .catch(error => {
+                console.error("There was an error sending the message:", error);
+                alert("Es gab ein Problem beim Senden der Nachricht. Bitte versuche es später erneut.");
+            });
+        });
+    });
+</script>
+
